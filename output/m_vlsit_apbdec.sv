@@ -2,11 +2,11 @@
 //Project: APB Decoder Generator
 //Module:  m_vlsit_apbdec
 //Function: APB Decoder
-//Author:  link
+//Author:  desktop-419tv1e\lenovo
 //Script Author: Thang Luong (superzeldalink)
 //Page:    VLSI Technology
 //--------------------------------------
-//Generated: 2026-03-16 00:11:59
+//Generated: 2026-03-16 04:48:17
 //--------------------------------------
 //Address Width: 24
 //Data Width: 32
@@ -101,12 +101,12 @@ module m_vlsit_apbdec (
   // ============================================================================
   // Address Decode Logic
   // ============================================================================
-  assign w_slave_uart_sel = (i_paddr <= 24'h0000FF);
-  assign w_slave_i2c_sel = (i_paddr >= 24'h0100 && i_paddr <= 24'h00010F);
-  assign w_slave_spi_sel = (i_paddr >= 24'h1000 && i_paddr <= 24'h001FFF);
-  assign w_slave_can_sel = (i_paddr >= 24'h2000 && i_paddr <= 24'h009FFF);
-  assign w_slave_pwm_sel = (i_paddr >= 24'hA000 && i_paddr <= 24'h00A0FF);
-  assign w_slave_gyro_sel = (i_paddr >= 24'hB000 && i_paddr <= 24'h00B3FF);
+  assign w_slave_uart_sel = (i_paddr >= 24'h0000 & i_paddr <= 24'h0000FF);
+  assign w_slave_i2c_sel = (i_paddr >= 24'h0100 & i_paddr <= 24'h00010F);
+  assign w_slave_spi_sel = (i_paddr >= 24'h1000 & i_paddr <= 24'h001FFF);
+  assign w_slave_can_sel = (i_paddr >= 24'h2000 & i_paddr <= 24'h009FFF);
+  assign w_slave_pwm_sel = (i_paddr >= 24'hA000 & i_paddr <= 24'h00A0FF);
+  assign w_slave_gyro_sel = (i_paddr >= 24'hB000 & i_paddr <= 24'h00B3FF);
 
   // ============================================================================
   // PREADY, PSLVERR and PRDATA Generation
@@ -153,7 +153,7 @@ module m_vlsit_apbdec (
       default: begin
         o_pready  = 1'b1;
         o_pslverr = 1'b1;
-        o_prdata  = 32'b0;
+        o_prdata  = 32'd0;
       end
     endcase
   end
@@ -161,42 +161,42 @@ module m_vlsit_apbdec (
   // ============================================================================
   // Slave Select Generation
   // ============================================================================
-  assign o_psel_uart    = w_slave_uart_sel && i_psel;
+  assign o_psel_uart    = w_slave_uart_sel & i_psel;
   assign o_penable_uart = i_penable;
   assign o_pwrite_uart  = i_pwrite;
   assign o_paddr_uart   = i_paddr[7:0];
   assign o_pwdata_uart  = i_pwdata;
   assign o_pstrb_uart   = i_pstrb;
 
-  assign o_psel_i2c    = w_slave_i2c_sel && i_psel;
+  assign o_psel_i2c    = w_slave_i2c_sel & i_psel;
   assign o_penable_i2c = i_penable;
   assign o_pwrite_i2c  = i_pwrite;
   assign o_paddr_i2c   = i_paddr[3:0];
   assign o_pwdata_i2c  = i_pwdata;
   assign o_pstrb_i2c   = i_pstrb;
 
-  assign o_psel_spi    = w_slave_spi_sel && i_psel;
+  assign o_psel_spi    = w_slave_spi_sel & i_psel;
   assign o_penable_spi = i_penable;
   assign o_pwrite_spi  = i_pwrite;
   assign o_paddr_spi   = i_paddr[11:0];
   assign o_pwdata_spi  = i_pwdata;
   assign o_pstrb_spi   = i_pstrb;
 
-  assign o_psel_can    = w_slave_can_sel && i_psel;
+  assign o_psel_can    = w_slave_can_sel & i_psel;
   assign o_penable_can = i_penable;
   assign o_pwrite_can  = i_pwrite;
   assign o_paddr_can   = i_paddr[14:0];
   assign o_pwdata_can  = i_pwdata;
   assign o_pstrb_can   = i_pstrb;
 
-  assign o_psel_pwm    = w_slave_pwm_sel && i_psel;
+  assign o_psel_pwm    = w_slave_pwm_sel & i_psel;
   assign o_penable_pwm = i_penable;
   assign o_pwrite_pwm  = i_pwrite;
   assign o_paddr_pwm   = i_paddr[7:0];
   assign o_pwdata_pwm  = i_pwdata;
   assign o_pstrb_pwm   = i_pstrb;
 
-  assign o_psel_gyro    = w_slave_gyro_sel && i_psel;
+  assign o_psel_gyro    = w_slave_gyro_sel & i_psel;
   assign o_penable_gyro = i_penable;
   assign o_pwrite_gyro  = i_pwrite;
   assign o_paddr_gyro   = i_paddr[9:0];

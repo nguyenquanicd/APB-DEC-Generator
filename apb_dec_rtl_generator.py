@@ -234,11 +234,7 @@ module {module_name} (
         offset = slave['offset']
         end_addr = slave['end_address']
         offset_val = int(offset[2:], 16)
-        if offset_val == 0:
-            sv += f'''  assign w_slave_{slave_lower}_sel = (i_paddr <= {addr_width}'h{end_addr[2:]});
-'''
-        else:
-            sv += f'''  assign w_slave_{slave_lower}_sel = (i_paddr >= {addr_width}'h{offset[2:]} && i_paddr <= {addr_width}'h{end_addr[2:]});
+        sv += f'''  assign w_slave_{slave_lower}_sel = (i_paddr >= {addr_width}'h{offset[2:]} & i_paddr <= {addr_width}'h{end_addr[2:]});
 '''
     sv += '\n'
 
@@ -271,7 +267,7 @@ module {module_name} (
     sv += f'''      default: begin
         o_pready  = 1'b1;
         o_pslverr = 1'b{pslverr_on_unmapped};
-        o_prdata  = {data_width}'b0;
+        o_prdata  = {data_width}'d0;
       end
     endcase
   end
@@ -286,7 +282,7 @@ module {module_name} (
     for i, slave in enumerate(slaves):
         slave_lower = slave['name'].lower()
         slave_addr_width = slave['address_width']
-        sv += f'''  assign o_psel_{slave_lower}    = w_slave_{slave_lower}_sel && i_psel;
+        sv += f'''  assign o_psel_{slave_lower}    = w_slave_{slave_lower}_sel & i_psel;
   assign o_penable_{slave_lower} = i_penable;
   assign o_pwrite_{slave_lower}  = i_pwrite;
   assign o_paddr_{slave_lower}   = i_paddr[{slave_addr_width-1}:0];
