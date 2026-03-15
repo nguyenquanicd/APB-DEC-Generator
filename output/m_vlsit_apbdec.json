@@ -1,0 +1,57 @@
+{
+  "module_name": "m_vlsit_apbdec",
+  "address_width": 24,
+  "data_width": 32,
+  "write_strobe": 4,
+  "pslverr_on_unmapped": 1,
+  "slaves": [
+    {
+      "name": "UART",
+      "address_width": 8,
+      "offset": "0x0000",
+      "size": "256 B",
+      "end_address": "0x0000FF",
+      "description": null
+    },
+    {
+      "name": "I2C",
+      "address_width": 4,
+      "offset": "0x0100",
+      "size": "16 B",
+      "end_address": "0x00010F",
+      "description": null
+    },
+    {
+      "name": "SPI",
+      "address_width": 12,
+      "offset": "0x1000",
+      "size": "4 KB",
+      "end_address": "0x001FFF",
+      "description": null
+    },
+    {
+      "name": "CAN",
+      "address_width": 15,
+      "offset": "0x2000",
+      "size": "32 KB",
+      "end_address": "0x009FFF",
+      "description": null
+    },
+    {
+      "name": "PWM",
+      "address_width": 8,
+      "offset": "0xA000",
+      "size": "256 B",
+      "end_address": "0x00A0FF",
+      "description": null
+    },
+    {
+      "name": "GYRO",
+      "address_width": 10,
+      "offset": "0xB000",
+      "size": "1 KB",
+      "end_address": "0x00B3FF",
+      "description": null
+    }
+  ]
+}

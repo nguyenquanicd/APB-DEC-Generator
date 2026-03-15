@@ -1,0 +1,28 @@
+**/.DS_Store
+csrc/
+simv.daidir/
+novas*
+ucli*
+simv
+wave*
+verdiLog/
+tb_verilator/
+core
+obj_dir/
+
+# VCS/sim artifacts
+sim/vcs/csrc/
+sim/vcs/DVEfiles/
+sim/vcs/AN.DB
+sim/vcs/*.log
+sim/vcs/*.fsdb
+sim/*/*.vcd
+sim/verilator/-Wno-fatal/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# LINT
+vcst_*
+.vc*
