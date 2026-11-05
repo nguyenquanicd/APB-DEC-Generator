@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="462" height="438" viewBox="0 0 462 438" font-family="Helvetica,Arial,sans-serif">
+<rect width="100%" height="100%" fill="#fff"/>
+<line x1="162" y1="8" x2="162" y2="428" stroke="#ccc" stroke-dasharray="2,3"/>
+<line x1="198" y1="8" x2="198" y2="428" stroke="#ccc" stroke-dasharray="2,3"/>
+<line x1="234" y1="8" x2="234" y2="428" stroke="#ccc" stroke-dasharray="2,3"/>
+<line x1="270" y1="8" x2="270" y2="428" stroke="#ccc" stroke-dasharray="2,3"/>
+<line x1="306" y1="8" x2="306" y2="428" stroke="#ccc" stroke-dasharray="2,3"/>
+<line x1="342" y1="8" x2="342" y2="428" stroke="#ccc" stroke-dasharray="2,3"/>
+<line x1="378" y1="8" x2="378" y2="428" stroke="#ccc" stroke-dasharray="2,3"/>
+<line x1="414" y1="8" x2="414" y2="428" stroke="#ccc" stroke-dasharray="2,3"/>
+<line x1="450" y1="8" x2="450" y2="428" stroke="#ccc" stroke-dasharray="2,3"/>
+<text x="154" y="27" font-size="12" text-anchor="end">i_clk_apb</text>
+<polyline points="162.0,29.0 162.0,11.0 180.0,11.0 180.0,29.0 198.0,29.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="198.0,29.0 198.0,11.0 216.0,11.0 216.0,29.0 234.0,29.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="234.0,29.0 234.0,11.0 252.0,11.0 252.0,29.0 270.0,29.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="270.0,29.0 270.0,11.0 288.0,11.0 288.0,29.0 306.0,29.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="306.0,29.0 306.0,11.0 324.0,11.0 324.0,29.0 342.0,29.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="342.0,29.0 342.0,11.0 360.0,11.0 360.0,29.0 378.0,29.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="378.0,29.0 378.0,11.0 396.0,11.0 396.0,29.0 414.0,29.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="414.0,29.0 414.0,11.0 432.0,11.0 432.0,29.0 450.0,29.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<text x="12" y="57" font-size="12" font-weight="bold" fill="#225">Requester bus (decoder inputs and response)</text>
+<text x="154" y="87" font-size="12" text-anchor="end">i_psel</text>
+<polyline points="162.0,89.0 198.0,89.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="198.0,89.0 198.0,71.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="198.0,71.0 234.0,71.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="234.0,71.0 270.0,71.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="270.0,71.0 306.0,71.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="306.0,71.0 342.0,71.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="342.0,71.0 342.0,89.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="342.0,89.0 378.0,89.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="378.0,89.0 414.0,89.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="414.0,89.0 450.0,89.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<text x="154" y="117" font-size="12" text-anchor="end">i_penable</text>
+<polyline points="162.0,119.0 198.0,119.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="198.0,119.0 234.0,119.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="234.0,119.0 234.0,101.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="234.0,101.0 270.0,101.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="270.0,101.0 306.0,101.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="306.0,101.0 342.0,101.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="342.0,101.0 342.0,119.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="342.0,119.0 378.0,119.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="378.0,119.0 414.0,119.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="414.0,119.0 450.0,119.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<text x="154" y="147" font-size="12" text-anchor="end">i_paddr</text>
+<rect x="162.0" y="131.0" width="36.0" height="18.0" fill="#ddd" stroke="#000"/>
+<polygon points="202.0,131.0 338.0,131.0 342.0,140.0 338.0,149.0 202.0,149.0 198.0,140.0" fill="#ffffff" stroke="#000" stroke-width="1.2"/>
+<text x="270.0" y="144.0" text-anchor="middle" font-size="11">0xE014</text>
+<rect x="342.0" y="131.0" width="36.0" height="18.0" fill="#ddd" stroke="#000"/>
+<rect x="378.0" y="131.0" width="36.0" height="18.0" fill="#ddd" stroke="none"/>
+<rect x="414.0" y="131.0" width="36.0" height="18.0" fill="#ddd" stroke="none"/>
+<text x="154" y="177" font-size="12" text-anchor="end">o_pready</text>
+<polyline points="162.0,179.0 198.0,179.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="198.0,179.0 234.0,179.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="234.0,179.0 270.0,179.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="270.0,179.0 306.0,179.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="306.0,179.0 306.0,161.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="306.0,161.0 342.0,161.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="342.0,161.0 342.0,179.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="342.0,179.0 378.0,179.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="378.0,179.0 414.0,179.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="414.0,179.0 450.0,179.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<text x="12" y="207" font-size="12" font-weight="bold" fill="#225">Slave ROMTAB bus (decoder outputs)</text>
+<text x="154" y="237" font-size="12" text-anchor="end">o_psel_romtab</text>
+<polyline points="162.0,239.0 198.0,239.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="198.0,239.0 234.0,239.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="234.0,239.0 234.0,221.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="234.0,221.0 270.0,221.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="270.0,221.0 306.0,221.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="306.0,221.0 306.0,239.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="306.0,239.0 342.0,239.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="342.0,239.0 378.0,239.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="378.0,239.0 414.0,239.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="414.0,239.0 450.0,239.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<text x="154" y="267" font-size="12" text-anchor="end">o_penable_romtab</text>
+<polyline points="162.0,269.0 198.0,269.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="198.0,269.0 234.0,269.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="234.0,269.0 270.0,269.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="270.0,269.0 270.0,251.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="270.0,251.0 306.0,251.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="306.0,251.0 306.0,269.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="306.0,269.0 342.0,269.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="342.0,269.0 378.0,269.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="378.0,269.0 414.0,269.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="414.0,269.0 450.0,269.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<text x="22" y="297" font-size="12" font-weight="bold" fill="#225">Address Rebase = 1</text>
+<text x="154" y="327" font-size="12" text-anchor="end">o_paddr_romtab</text>
+<rect x="162.0" y="311.0" width="36.0" height="18.0" fill="#ddd" stroke="#000"/>
+<rect x="198.0" y="311.0" width="36.0" height="18.0" fill="#ddd" stroke="none"/>
+<polygon points="238.0,311.0 302.0,311.0 306.0,320.0 302.0,329.0 238.0,329.0 234.0,320.0" fill="#ffffff" stroke="#000" stroke-width="1.2"/>
+<text x="270.0" y="324.0" text-anchor="middle" font-size="11">0x04</text>
+<rect x="306.0" y="311.0" width="36.0" height="18.0" fill="#ddd" stroke="#000"/>
+<rect x="342.0" y="311.0" width="36.0" height="18.0" fill="#ddd" stroke="none"/>
+<rect x="378.0" y="311.0" width="36.0" height="18.0" fill="#ddd" stroke="none"/>
+<rect x="414.0" y="311.0" width="36.0" height="18.0" fill="#ddd" stroke="none"/>
+<text x="22" y="357" font-size="12" font-weight="bold" fill="#225">Address Rebase = 0</text>
+<text x="154" y="387" font-size="12" text-anchor="end">o_paddr_romtab</text>
+<rect x="162.0" y="371.0" width="36.0" height="18.0" fill="#ddd" stroke="#000"/>
+<rect x="198.0" y="371.0" width="36.0" height="18.0" fill="#ddd" stroke="none"/>
+<polygon points="238.0,371.0 302.0,371.0 306.0,380.0 302.0,389.0 238.0,389.0 234.0,380.0" fill="#ffffff" stroke="#000" stroke-width="1.2"/>
+<text x="270.0" y="384.0" text-anchor="middle" font-size="11">0x14</text>
+<rect x="306.0" y="371.0" width="36.0" height="18.0" fill="#ddd" stroke="#000"/>
+<rect x="342.0" y="371.0" width="36.0" height="18.0" fill="#ddd" stroke="none"/>
+<rect x="378.0" y="371.0" width="36.0" height="18.0" fill="#ddd" stroke="none"/>
+<rect x="414.0" y="371.0" width="36.0" height="18.0" fill="#ddd" stroke="none"/>
+<text x="154" y="417" font-size="12" text-anchor="end">i_pready_romtab</text>
+<polyline points="162.0,419.0 198.0,419.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="198.0,419.0 234.0,419.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="234.0,419.0 270.0,419.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="270.0,419.0 270.0,401.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="270.0,401.0 306.0,401.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="306.0,401.0 306.0,419.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="306.0,419.0 342.0,419.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="342.0,419.0 378.0,419.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="378.0,419.0 414.0,419.0" stroke="#000" stroke-width="1.4" fill="none"/>
+<polyline points="414.0,419.0 450.0,419.0" stroke="#000" stroke-width="1.4" fill="none"/>
+</svg>

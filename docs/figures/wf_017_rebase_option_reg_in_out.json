@@ -1,0 +1,65 @@
+{
+ "signal": [
+  {
+   "name": "i_clk_apb",
+   "wave": "p......."
+  },
+  [
+   "Requester bus (decoder inputs and response)",
+   {
+    "name": "i_psel",
+    "wave": "01.....0"
+   },
+   {
+    "name": "i_penable",
+    "wave": "0.1....0"
+   },
+   {
+    "name": "i_paddr",
+    "wave": "x=.....x",
+    "data": [
+     "0xE014"
+    ]
+   },
+   {
+    "name": "o_pready",
+    "wave": "0.....10"
+   }
+  ],
+  [
+   "Slave ROMTAB bus (decoder outputs)",
+   {
+    "name": "o_psel_romtab",
+    "wave": "0..1.0.."
+   },
+   {
+    "name": "o_penable_romtab",
+    "wave": "0...10.."
+   },
+   [
+    "Address Rebase = 1",
+    {
+     "name": "o_paddr_romtab",
+     "wave": "x..=.x..",
+     "data": [
+      "0x04"
+     ]
+    }
+   ],
+   [
+    "Address Rebase = 0",
+    {
+     "name": "o_paddr_romtab",
+     "wave": "x..=.x..",
+     "data": [
+      "0x14"
+     ]
+    }
+   ],
+   {
+    "name": "i_pready_romtab",
+    "wave": "0...10.."
+   }
+  ]
+ ]
+}

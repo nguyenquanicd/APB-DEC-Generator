@@ -1,0 +1,56 @@
+{
+  "json_version": 2,
+  "module_name": "m_apbdec_byte",
+  "address_width": 16,
+  "data_width": 8,
+  "write_strobe": 1,
+  "address_rebase": 1,
+  "register_inputs": 0,
+  "register_outputs": 0,
+  "slaves": [
+    {
+      "name": "REGA",
+      "start": "0x0",
+      "end": "0x2",
+      "start_val": 0,
+      "end_val": 2,
+      "size_bytes": 3,
+      "size": "3 B",
+      "address_width": 2,
+      "description": "three bytes"
+    },
+    {
+      "name": "REGB",
+      "start": "0x3",
+      "end": "0x3",
+      "start_val": 3,
+      "end_val": 3,
+      "size_bytes": 1,
+      "size": "1 B",
+      "address_width": 1,
+      "description": "one byte"
+    },
+    {
+      "name": "REGC",
+      "start": "0x10",
+      "end": "0x1F",
+      "start_val": 16,
+      "end_val": 31,
+      "size_bytes": 16,
+      "size": "16 B",
+      "address_width": 4,
+      "description": "16 bytes"
+    },
+    {
+      "name": "REGD",
+      "start": "0x8000",
+      "end": "0xBFFF",
+      "start_val": 32768,
+      "end_val": 49151,
+      "size_bytes": 16384,
+      "size": "16 KB",
+      "address_width": 14,
+      "description": "16 KB"
+    }
+  ]
+}

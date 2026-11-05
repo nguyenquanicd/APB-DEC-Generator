@@ -26,3 +26,5 @@ __pycache__/
 # LINT
 vcst_*
 .vc*
+tests/cov_work/
+/output/

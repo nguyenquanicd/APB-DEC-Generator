@@ -1,0 +1,49 @@
+{
+ "signal": [
+  {
+   "name": "i_clk_apb",
+   "wave": "p......."
+  },
+  {
+   "name": "i_unmapped_err_en",
+   "wave": "1......."
+  },
+  [
+   "Requester bus (decoder inputs and response)",
+   {
+    "name": "i_psel",
+    "wave": "01.....0"
+   },
+   {
+    "name": "i_penable",
+    "wave": "0.1....0"
+   },
+   {
+    "name": "i_paddr",
+    "wave": "x=.....x",
+    "data": [
+     "0x0500"
+    ]
+   },
+   {
+    "name": "o_pready",
+    "wave": "0.....10"
+   },
+   {
+    "name": "o_pslverr",
+    "wave": "0.....10"
+   }
+  ],
+  [
+   "Slave UART bus (no select: the address is in a hole)",
+   {
+    "name": "o_psel_uart",
+    "wave": "0......."
+   },
+   {
+    "name": "o_penable_uart",
+    "wave": "0......."
+   }
+  ]
+ ]
+}

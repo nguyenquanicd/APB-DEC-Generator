@@ -1,0 +1,45 @@
+{
+  "json_version": 2,
+  "module_name": "m_apbdec_half",
+  "address_width": 12,
+  "data_width": 16,
+  "write_strobe": 2,
+  "address_rebase": 1,
+  "register_inputs": 0,
+  "register_outputs": 0,
+  "slaves": [
+    {
+      "name": "TIMER",
+      "start": "0x10",
+      "end": "0x5F",
+      "start_val": 16,
+      "end_val": 95,
+      "size_bytes": 80,
+      "size": "80 B",
+      "address_width": 7,
+      "description": "odd start and size"
+    },
+    {
+      "name": "GPIO",
+      "start": "0x100",
+      "end": "0x1FF",
+      "start_val": 256,
+      "end_val": 511,
+      "size_bytes": 256,
+      "size": "256 B",
+      "address_width": 8,
+      "description": "256 B"
+    },
+    {
+      "name": "WDOG",
+      "start": "0x300",
+      "end": "0x30B",
+      "start_val": 768,
+      "end_val": 779,
+      "size_bytes": 12,
+      "size": "12 B",
+      "address_width": 4,
+      "description": "12 B"
+    }
+  ]
+}

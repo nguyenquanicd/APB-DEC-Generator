@@ -1,0 +1,66 @@
+{
+ "signal": [
+  {
+   "name": "i_clk_apb",
+   "wave": "p........."
+  },
+  [
+   "Requester bus (decoder inputs and response)",
+   {
+    "name": "i_psel",
+    "wave": "01.......0"
+   },
+   {
+    "name": "i_penable",
+    "wave": "0.1......0"
+   },
+   {
+    "name": "i_paddr",
+    "wave": "x=.......x",
+    "data": [
+     "0x0040"
+    ]
+   },
+   {
+    "name": "i_pwdata",
+    "wave": "x=.......x",
+    "data": [
+     "D0"
+    ]
+   },
+   {
+    "name": "o_pready",
+    "wave": "0.......10"
+   }
+  ],
+  [
+   "Slave UART bus (decoder outputs and slave PREADY)",
+   {
+    "name": "o_psel_uart",
+    "wave": "0..1...0.."
+   },
+   {
+    "name": "o_penable_uart",
+    "wave": "0...1..0.."
+   },
+   {
+    "name": "o_paddr_uart",
+    "wave": "x..=...x..",
+    "data": [
+     "0x40"
+    ]
+   },
+   {
+    "name": "o_pwdata_uart",
+    "wave": "x..=...x..",
+    "data": [
+     "D0"
+    ]
+   },
+   {
+    "name": "i_pready_uart",
+    "wave": "0.....10.."
+   }
+  ]
+ ]
+}

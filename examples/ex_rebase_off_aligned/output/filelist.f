@@ -1,0 +1,2 @@
+$APB_DEC_GEN_HOME/examples/ex_rebase_off_aligned/output/m_apbdec_noreb.sv
+$APB_DEC_GEN_HOME/examples/ex_rebase_off_aligned/output/m_apbdec_noreb_tb.sv

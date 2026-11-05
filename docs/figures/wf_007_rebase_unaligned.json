@@ -1,0 +1,50 @@
+{
+ "signal": [
+  {
+   "name": "PCLK",
+   "wave": "p......."
+  },
+  {
+   "name": "i_psel",
+   "wave": "01...0.."
+  },
+  {
+   "name": "i_penable",
+   "wave": "0.1010.."
+  },
+  {
+   "name": "i_paddr",
+   "wave": "x=.=.x..",
+   "data": [
+    "0xE010",
+    "0xE02F"
+   ]
+  },
+  {
+   "name": "o_psel_romtab",
+   "wave": "01...0.."
+  },
+  [
+   "Address Rebase = 1",
+   {
+    "name": "o_paddr_romtab",
+    "wave": "x=.=.x..",
+    "data": [
+     "0x00",
+     "0x1F"
+    ]
+   }
+  ],
+  [
+   "Address Rebase = 0",
+   {
+    "name": "o_paddr_romtab",
+    "wave": "x=.=.x..",
+    "data": [
+     "0x10",
+     "0x0F"
+    ]
+   }
+  ]
+ ]
+}

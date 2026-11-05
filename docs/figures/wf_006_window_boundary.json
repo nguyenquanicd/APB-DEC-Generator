@@ -1,0 +1,59 @@
+{
+ "signal": [
+  {
+   "name": "PCLK",
+   "wave": "p......."
+  },
+  {
+   "name": "i_unmapped_err_en",
+   "wave": "1......."
+  },
+  {
+   "name": "i_psel",
+   "wave": "01.....0"
+  },
+  {
+   "name": "i_penable",
+   "wave": "0.101010"
+  },
+  {
+   "name": "i_paddr",
+   "wave": "x=.=.=.x",
+   "data": [
+    "0xFF",
+    "0x100",
+    "0x118"
+   ]
+  },
+  {
+   "name": "o_psel_uart",
+   "wave": "01.0...."
+  },
+  {
+   "name": "o_psel_i2c",
+   "wave": "0..1.0.."
+  },
+  {
+   "name": "o_paddr_uart",
+   "wave": "x=.x....",
+   "data": [
+    "0xFF"
+   ]
+  },
+  {
+   "name": "o_paddr_i2c",
+   "wave": "x..=.x..",
+   "data": [
+    "0x00"
+   ]
+  },
+  {
+   "name": "o_pready",
+   "wave": "x010111x"
+  },
+  {
+   "name": "o_pslverr",
+   "wave": "0.....10"
+  }
+ ]
+}

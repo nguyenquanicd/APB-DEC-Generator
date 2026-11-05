@@ -1,0 +1,40 @@
+{
+ "signal": [
+  {
+   "name": "PCLK",
+   "wave": "p......."
+  },
+  {
+   "name": "i_psel",
+   "wave": "01.0...."
+  },
+  {
+   "name": "i_penable",
+   "wave": "0.10...."
+  },
+  {
+   "name": "i_pwrite",
+   "wave": "x1.x...."
+  },
+  {
+   "name": "o_psel_uart",
+   "wave": "01.0...."
+  },
+  {
+   "name": "i_pready_uart",
+   "wave": "0.10...."
+  },
+  {
+   "name": "i_pslverr_uart",
+   "wave": "0.10...."
+  },
+  {
+   "name": "o_pready",
+   "wave": "0.10...."
+  },
+  {
+   "name": "o_pslverr",
+   "wave": "0.10...."
+  }
+ ]
+}

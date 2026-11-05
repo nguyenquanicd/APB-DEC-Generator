@@ -1,0 +1,45 @@
+{
+  "json_version": 2,
+  "module_name": "m_apbdec_wide",
+  "address_width": 32,
+  "data_width": 32,
+  "write_strobe": 4,
+  "address_rebase": 1,
+  "register_inputs": 0,
+  "register_outputs": 0,
+  "slaves": [
+    {
+      "name": "LOWMEM",
+      "start": "0x0",
+      "end": "0xFFFF",
+      "start_val": 0,
+      "end_val": 65535,
+      "size_bytes": 65536,
+      "size": "64 KB",
+      "address_width": 16,
+      "description": "64 KB at the bottom"
+    },
+    {
+      "name": "MIDDLE",
+      "start": "0x12345678",
+      "end": "0x123456FF",
+      "start_val": 305419896,
+      "end_val": 305420031,
+      "size_bytes": 136,
+      "size": "136 B",
+      "address_width": 8,
+      "description": "unaligned 136 B"
+    },
+    {
+      "name": "TOPREG",
+      "start": "0xFFFFFF00",
+      "end": "0xFFFFFFFF",
+      "start_val": 4294967040,
+      "end_val": 4294967295,
+      "size_bytes": 256,
+      "size": "256 B",
+      "address_width": 8,
+      "description": "last 256 bytes of the space"
+    }
+  ]
+}

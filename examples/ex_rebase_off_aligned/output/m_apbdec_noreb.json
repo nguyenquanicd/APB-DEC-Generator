@@ -1,0 +1,100 @@
+{
+  "json_version": 2,
+  "module_name": "m_apbdec_noreb",
+  "address_width": 24,
+  "data_width": 32,
+  "write_strobe": 4,
+  "address_rebase": 0,
+  "register_inputs": 0,
+  "register_outputs": 0,
+  "slaves": [
+    {
+      "name": "UART",
+      "start": "0x0",
+      "end": "0xFF",
+      "start_val": 0,
+      "end_val": 255,
+      "size_bytes": 256,
+      "size": "256 B",
+      "address_width": 8,
+      "description": "256 B at 0x0000"
+    },
+    {
+      "name": "I2C",
+      "start": "0x100",
+      "end": "0x11F",
+      "start_val": 256,
+      "end_val": 287,
+      "size_bytes": 32,
+      "size": "32 B",
+      "address_width": 5,
+      "description": "32 B at a multiple of 32"
+    },
+    {
+      "name": "SPI",
+      "start": "0x1000",
+      "end": "0x1FFF",
+      "start_val": 4096,
+      "end_val": 8191,
+      "size_bytes": 4096,
+      "size": "4 KB",
+      "address_width": 12,
+      "description": "4 KB at a multiple of 4 KB"
+    },
+    {
+      "name": "CAN",
+      "start": "0x8000",
+      "end": "0xFFFF",
+      "start_val": 32768,
+      "end_val": 65535,
+      "size_bytes": 32768,
+      "size": "32 KB",
+      "address_width": 15,
+      "description": "32 KB at a multiple of 32 KB"
+    },
+    {
+      "name": "PWM",
+      "start": "0x10000",
+      "end": "0x100FF",
+      "start_val": 65536,
+      "end_val": 65791,
+      "size_bytes": 256,
+      "size": "256 B",
+      "address_width": 8,
+      "description": "256 B"
+    },
+    {
+      "name": "GYRO",
+      "start": "0x11000",
+      "end": "0x113FF",
+      "start_val": 69632,
+      "end_val": 70655,
+      "size_bytes": 1024,
+      "size": "1 KB",
+      "address_width": 10,
+      "description": "1 KB"
+    },
+    {
+      "name": "SRAMCSR",
+      "start": "0x14000",
+      "end": "0x15FFF",
+      "start_val": 81920,
+      "end_val": 90111,
+      "size_bytes": 8192,
+      "size": "8 KB",
+      "address_width": 13,
+      "description": "8 KB"
+    },
+    {
+      "name": "ROMTAB",
+      "start": "0x20000",
+      "end": "0x2001F",
+      "start_val": 131072,
+      "end_val": 131103,
+      "size_bytes": 32,
+      "size": "32 B",
+      "address_width": 5,
+      "description": "32 B"
+    }
+  ]
+}

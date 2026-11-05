@@ -1,0 +1,169 @@
+{
+ "page_name": "BLOCK_DIAGRAM",
+ "out_name": "block_diagram.drawio",
+ "table_suffix": "",
+ "layout": {
+  "gap_h": 100,
+  "gap_v": 90,
+  "margin": 40,
+  "block_h": 70
+ },
+ "top": {
+  "frame_label": [
+   "TOP",
+   "(m_vlsit_apbdec)"
+  ],
+  "block_label": [
+   "TOP",
+   "(m_vlsit_apbdec)"
+  ],
+  "block_row": [
+   "TOP (m_vlsit_apbdec)",
+   "The whole decoder in one module: window match, local addresses, response selection, forwarding of the other attributes and, with a register option, the input stage, the output stage and the phase state machine.",
+   "Section 14.2"
+  ]
+ },
+ "frame_row": [
+  "TOP (m_vlsit_apbdec) frame",
+  "Top module of the APB decoder. It is a single module without child modules.",
+  "Section 14.2"
+ ],
+ "frame_interfaces": [
+  "REQ",
+  "RRSP",
+  "SOUT",
+  "SRSP",
+  "CTL",
+  "CRCLK"
+ ],
+ "blocks": [
+  {
+   "key": "TOP",
+   "label": [
+    "u_decoder",
+    "(m_vlsit_apbdec)"
+   ],
+   "width": 240,
+   "row": 0,
+   "col": 0,
+   "row_name": "m_vlsit_apbdec",
+   "function": "Decoder. It compares the transfer address with the closed address window of every slave, raises the select of the owner, gives every slave its local address, forwards the transfer attributes, and returns the response of the selected slave or builds the response for an address that no slave owns. With a register option it adds flip-flops on the inputs, on the outputs, or on both, and a state machine that keeps the APB phases correct.",
+   "source": "Section 14.2"
+  }
+ ],
+ "connectors": [],
+ "externals": [
+  {
+   "id": "REQ",
+   "block": "TOP",
+   "side": "L",
+   "dir": "in",
+   "pos": 0,
+   "text": [
+    "REQ",
+    "i_paddr, i_psel, i_penable"
+   ]
+  },
+  {
+   "id": "RRSP",
+   "block": "TOP",
+   "side": "B",
+   "dir": "out",
+   "pos": 0,
+   "text": [
+    "RRSP",
+    "o_pready, o_prdata, o_pslverr"
+   ]
+  },
+  {
+   "id": "SOUT",
+   "block": "TOP",
+   "side": "R",
+   "dir": "out",
+   "pos": 0,
+   "text": [
+    "SOUT",
+    "o_psel_k, o_paddr_k"
+   ]
+  },
+  {
+   "id": "SRSP",
+   "block": "TOP",
+   "side": "R",
+   "dir": "in",
+   "pos": 10,
+   "text": [
+    "SRSP",
+    "i_pready_k, i_prdata_k"
+   ]
+  },
+  {
+   "id": "CTL",
+   "block": "TOP",
+   "side": "L",
+   "dir": "in",
+   "pos": 10,
+   "text": [
+    "CTL",
+    "i_unmapped_err_en"
+   ]
+  },
+  {
+   "id": "CRCLK",
+   "block": "TOP",
+   "side": "B",
+   "dir": "in",
+   "pos": 0,
+   "text": [
+    "CRCLK",
+    "i_clk_apb, i_rst_n_apb"
+   ]
+  }
+ ],
+ "nets": [],
+ "interfaces": [
+  {
+   "id": "REQ",
+   "name": "APB4 requester inputs",
+   "category": "standard protocol (APB4)",
+   "active": "external requester -> decoder",
+   "signals": "external requester -> decoder: i_paddr, i_pprot, i_psel, i_penable, i_pwrite, i_pwdata, i_pstrb"
+  },
+  {
+   "id": "RRSP",
+   "name": "APB4 response to the requester",
+   "category": "standard protocol (APB4)",
+   "active": "decoder -> external requester",
+   "signals": "decoder -> external requester: o_pready, o_prdata, o_pslverr"
+  },
+  {
+   "id": "SOUT",
+   "name": "APB4 outputs to the slaves",
+   "category": "standard protocol (APB4)",
+   "active": "decoder -> external slaves",
+   "signals": "decoder -> external slaves: o_psel_k, o_penable_k, o_pwrite_k, o_paddr_k, o_pwdata_k, o_pstrb_k, o_pprot_k (one group per slave)"
+  },
+  {
+   "id": "SRSP",
+   "name": "APB4 responses of the slaves",
+   "category": "standard protocol (APB4)",
+   "active": "external slaves -> decoder",
+   "signals": "external slaves -> decoder: i_pready_k, i_prdata_k, i_pslverr_k (one group per slave)"
+  },
+  {
+   "id": "CTL",
+   "name": "Unmapped-response control",
+   "category": "custom",
+   "active": "SoC -> decoder",
+   "signals": "SoC -> decoder: i_unmapped_err_en"
+  },
+  {
+   "id": "CRCLK",
+   "name": "Clock and reset (present only with Register Inputs or Register Outputs)",
+   "category": "custom",
+   "active": "SoC -> decoder",
+   "signals": "SoC -> decoder: i_clk_apb, i_rst_n_apb"
+  }
+ ],
+ "legend_note": "The enclosing frame is the top module and holds one block, the decoder itself: the generated RTL is a single module without child modules. The clock and reset are present only when Register Inputs or Register Outputs is 1."
+}

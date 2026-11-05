@@ -1,0 +1,45 @@
+{
+  "json_version": 2,
+  "module_name": "m_apbdec_regin",
+  "address_width": 16,
+  "data_width": 32,
+  "write_strobe": 4,
+  "address_rebase": 1,
+  "register_inputs": 1,
+  "register_outputs": 0,
+  "slaves": [
+    {
+      "name": "UART",
+      "start": "0x0",
+      "end": "0xFF",
+      "start_val": 0,
+      "end_val": 255,
+      "size_bytes": 256,
+      "size": "256 B",
+      "address_width": 8,
+      "description": "UART, 256 B"
+    },
+    {
+      "name": "I2C",
+      "start": "0x100",
+      "end": "0x117",
+      "start_val": 256,
+      "end_val": 279,
+      "size_bytes": 24,
+      "size": "24 B",
+      "address_width": 5,
+      "description": "I2C, 24 B"
+    },
+    {
+      "name": "SPI",
+      "start": "0x1000",
+      "end": "0x1FFF",
+      "start_val": 4096,
+      "end_val": 8191,
+      "size_bytes": 4096,
+      "size": "4 KB",
+      "address_width": 12,
+      "description": "SPI, 4 KB"
+    }
+  ]
+}

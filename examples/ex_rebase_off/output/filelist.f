@@ -1,0 +1,2 @@
+$APB_DEC_GEN_HOME/examples/ex_rebase_off/output/m_vlsit_apbdec_raw.sv
+$APB_DEC_GEN_HOME/examples/ex_rebase_off/output/m_vlsit_apbdec_raw_tb.sv

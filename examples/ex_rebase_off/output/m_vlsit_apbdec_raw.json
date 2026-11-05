@@ -1,0 +1,100 @@
+{
+  "json_version": 2,
+  "module_name": "m_vlsit_apbdec_raw",
+  "address_width": 24,
+  "data_width": 32,
+  "write_strobe": 4,
+  "address_rebase": 0,
+  "register_inputs": 0,
+  "register_outputs": 0,
+  "slaves": [
+    {
+      "name": "UART",
+      "start": "0x0",
+      "end": "0xFF",
+      "start_val": 0,
+      "end_val": 255,
+      "size_bytes": 256,
+      "size": "256 B",
+      "address_width": 8,
+      "description": "UART, 256 B, power of two"
+    },
+    {
+      "name": "I2C",
+      "start": "0x100",
+      "end": "0x117",
+      "start_val": 256,
+      "end_val": 279,
+      "size_bytes": 24,
+      "size": "24 B",
+      "address_width": 5,
+      "description": "I2C, 24 B, not a power of two"
+    },
+    {
+      "name": "SPI",
+      "start": "0x1000",
+      "end": "0x1FFF",
+      "start_val": 4096,
+      "end_val": 8191,
+      "size_bytes": 4096,
+      "size": "4 KB",
+      "address_width": 12,
+      "description": "SPI, 4 KB"
+    },
+    {
+      "name": "CAN",
+      "start": "0x2000",
+      "end": "0x9FFF",
+      "start_val": 8192,
+      "end_val": 40959,
+      "size_bytes": 32768,
+      "size": "32 KB",
+      "address_width": 15,
+      "description": "CAN, 32 KB"
+    },
+    {
+      "name": "PWM",
+      "start": "0xA000",
+      "end": "0xA0FF",
+      "start_val": 40960,
+      "end_val": 41215,
+      "size_bytes": 256,
+      "size": "256 B",
+      "address_width": 8,
+      "description": "PWM, 256 B"
+    },
+    {
+      "name": "GYRO",
+      "start": "0xB000",
+      "end": "0xB3FF",
+      "start_val": 45056,
+      "end_val": 46079,
+      "size_bytes": 1024,
+      "size": "1 KB",
+      "address_width": 10,
+      "description": "GYRO, 1 KB"
+    },
+    {
+      "name": "SRAMCSR",
+      "start": "0xC000",
+      "end": "0xD7FF",
+      "start_val": 49152,
+      "end_val": 55295,
+      "size_bytes": 6144,
+      "size": "6 KB",
+      "address_width": 13,
+      "description": "SRAM-like window, 6 KB"
+    },
+    {
+      "name": "ROMTAB",
+      "start": "0xE010",
+      "end": "0xE02F",
+      "start_val": 57360,
+      "end_val": 57391,
+      "size_bytes": 32,
+      "size": "32 B",
+      "address_width": 5,
+      "description": "ROM table, 32 B, start not aligned to its size"
+    }
+  ]
+}

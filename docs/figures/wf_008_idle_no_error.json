@@ -1,0 +1,41 @@
+{
+ "signal": [
+  {
+   "name": "PCLK",
+   "wave": "p......."
+  },
+  {
+   "name": "i_unmapped_err_en",
+   "wave": "1.0.1..."
+  },
+  {
+   "name": "i_psel",
+   "wave": "0....1.0"
+  },
+  {
+   "name": "i_penable",
+   "wave": "0.....10"
+  },
+  {
+   "name": "i_paddr",
+   "wave": "==.=....",
+   "data": [
+    "0x200",
+    "0x300",
+    "0x400"
+   ]
+  },
+  {
+   "name": "o_psel_uart",
+   "wave": "0......."
+  },
+  {
+   "name": "o_pready",
+   "wave": "1......."
+  },
+  {
+   "name": "o_pslverr",
+   "wave": "0.....10"
+  }
+ ]
+}

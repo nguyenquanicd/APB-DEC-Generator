@@ -1,0 +1,77 @@
+{
+ "signal": [
+  {
+   "name": "PCLK",
+   "wave": "p......."
+  },
+  [
+   "Requester side (from the bridge)",
+   {
+    "name": "i_psel",
+    "wave": "01.0...."
+   },
+   {
+    "name": "i_penable",
+    "wave": "0.10...."
+   },
+   {
+    "name": "i_pwrite",
+    "wave": "x1.x...."
+   },
+   {
+    "name": "i_paddr",
+    "wave": "x=.x....",
+    "data": [
+     "0x40"
+    ]
+   },
+   {
+    "name": "i_pwdata",
+    "wave": "x=.x....",
+    "data": [
+     "D0"
+    ]
+   }
+  ],
+  [
+   "Slave UART side",
+   {
+    "name": "o_psel_uart",
+    "wave": "01.0...."
+   },
+   {
+    "name": "o_penable_uart",
+    "wave": "0.10...."
+   },
+   {
+    "name": "o_paddr_uart",
+    "wave": "x=.x....",
+    "data": [
+     "0x40"
+    ]
+   },
+   {
+    "name": "o_pwdata_uart",
+    "wave": "x=.x....",
+    "data": [
+     "D0"
+    ]
+   },
+   {
+    "name": "i_pready_uart",
+    "wave": "0.10...."
+   }
+  ],
+  [
+   "Response",
+   {
+    "name": "o_pready",
+    "wave": "0.10...."
+   },
+   {
+    "name": "o_pslverr",
+    "wave": "0......."
+   }
+  ]
+ ]
+}
